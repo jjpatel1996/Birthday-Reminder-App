@@ -13,6 +13,7 @@
 		37EA1247210070F00018800F /* Birthday_Reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37EA1245210070F00018800F /* Birthday_Reminder.xcdatamodeld */; };
 		37EA1249210070F20018800F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EA1248210070F20018800F /* Assets.xcassets */; };
 		37EA124C210070F20018800F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EA124A210070F20018800F /* LaunchScreen.storyboard */; };
+		AA2C78D3DE8B1F4491C9E3C3 /* Pods_Birthday_Reminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723A330B4D7D9C1CE5F93239 /* Pods_Birthday_Reminder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		37EA1248210070F20018800F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37EA124B210070F20018800F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37EA124D210070F20018800F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723A330B4D7D9C1CE5F93239 /* Pods_Birthday_Reminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Birthday_Reminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE99E45CAA2F62E69BDFA58 /* Pods-Birthday-Reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birthday-Reminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder.release.xcconfig"; sourceTree = "<group>"; };
+		FA0756671453818AB8A300DE /* Pods-Birthday-Reminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birthday-Reminder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2C78D3DE8B1F4491C9E3C3 /* Pods_Birthday_Reminder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				37EA123D210070F00018800F /* Birthday-Reminder */,
 				37EA123C210070F00018800F /* Products */,
+				A10DDFD7E8867F86BF5FC85B /* Pods */,
+				6681659F7ED77B56FDD79221 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "Birthday-Reminder";
 			sourceTree = "<group>";
 		};
+		6681659F7ED77B56FDD79221 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				723A330B4D7D9C1CE5F93239 /* Pods_Birthday_Reminder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A10DDFD7E8867F86BF5FC85B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA0756671453818AB8A300DE /* Pods-Birthday-Reminder.debug.xcconfig */,
+				CDE99E45CAA2F62E69BDFA58 /* Pods-Birthday-Reminder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37EA1250210070F20018800F /* Build configuration list for PBXNativeTarget "Birthday-Reminder" */;
 			buildPhases = (
+				3CBC87D4054C375CFB72D313 /* [CP] Check Pods Manifest.lock */,
 				37EA1237210070F00018800F /* Sources */,
 				37EA1238210070F00018800F /* Frameworks */,
 				37EA1239210070F00018800F /* Resources */,
+				8A89E44FEAD87C9B7A4D335E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CBC87D4054C375CFB72D313 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Birthday-Reminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A89E44FEAD87C9B7A4D335E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37EA1237210070F00018800F /* Sources */ = {
@@ -282,15 +353,13 @@
 		};
 		37EA1251210070F20018800F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0756671453818AB8A300DE /* Pods-Birthday-Reminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZZE3DZVHL;
 				INFOPLIST_FILE = "Birthday-Reminder/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Patel.Birthday-Reminder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -300,15 +369,13 @@
 		};
 		37EA1252210070F20018800F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDE99E45CAA2F62E69BDFA58 /* Pods-Birthday-Reminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZZE3DZVHL;
 				INFOPLIST_FILE = "Birthday-Reminder/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Patel.Birthday-Reminder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
