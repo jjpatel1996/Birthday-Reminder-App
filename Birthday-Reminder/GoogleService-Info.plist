@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>95934072119-d7c55p4bmph5drvh5gagdkrbgmnpmniq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.95934072119-d7c55p4bmph5drvh5gagdkrbgmnpmniq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyARilaAORbEeWLgVTSZEQzaYgQ0tRCAOyw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>95934072119</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Jay-Patel.Birthday-Reminder</string>
+	<key>PROJECT_ID</key>
+	<string>birthday-reminder-app-c2a1f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>birthday-reminder-app-c2a1f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:95934072119:ios:c6676fd5782f769a</string>
+	<key>DATABASE_URL</key>
+	<string>https://birthday-reminder-app-c2a1f.firebaseio.com</string>
+</dict>
+</plist>

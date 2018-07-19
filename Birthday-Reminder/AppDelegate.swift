@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
+        
+        
+        if let themeName = UserDefaults.standard.string(forKey: "Theme") {
+            switch themeName {
+            case "White":
+                Theme.current = WhiteTheme()
+                break
+            case "Black":
+                Theme.current = BlackTheme()
+                break
+            case "Blue":
+                Theme.current = BlueTheme()
+                break
+            default:
+                break
+            }
+        }
+        
+        UINavigationBar.appearance().barTintColor =  Theme.current.NavigationBarColor
+        //UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().tintColor = Theme.current.NavigationTintColor
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : Theme.current.NavigationTitleColor]
+        
+        window?.rootViewController = UINavigationController(rootViewController: BirthdayListViewController())
+        application.statusBarStyle = .lightContent
         // Override point for customization after application launch.
         return true
     }

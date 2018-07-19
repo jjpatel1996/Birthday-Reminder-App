@@ -8,23 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		37EA123F210070F00018800F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA123E210070F00018800F /* AppDelegate.swift */; };
-		37EA1241210070F00018800F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA1240210070F00018800F /* ViewController.swift */; };
+		37EA1241210070F00018800F /* BirthdayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA1240210070F00018800F /* BirthdayListViewController.swift */; };
 		37EA1244210070F00018800F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EA1242210070F00018800F /* Main.storyboard */; };
 		37EA1247210070F00018800F /* Birthday_Reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37EA1245210070F00018800F /* Birthday_Reminder.xcdatamodeld */; };
 		37EA1249210070F20018800F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EA1248210070F20018800F /* Assets.xcassets */; };
 		37EA124C210070F20018800F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EA124A210070F20018800F /* LaunchScreen.storyboard */; };
+		37EA125421008C8F0018800F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37EA125321008C8E0018800F /* GoogleService-Info.plist */; };
+		37EA125621008E680018800F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA125521008E680018800F /* Theme.swift */; };
+		37EA125821008F1C0018800F /* Theme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EA125721008F1C0018800F /* Theme.xcassets */; };
+		37EA125A210094AF0018800F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EA1259210094AF0018800F /* SettingViewController.swift */; };
 		AA2C78D3DE8B1F4491C9E3C3 /* Pods_Birthday_Reminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723A330B4D7D9C1CE5F93239 /* Pods_Birthday_Reminder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37EA123B210070F00018800F /* Birthday-Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Birthday-Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EA123E210070F00018800F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37EA1240210070F00018800F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37EA1240210070F00018800F /* BirthdayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayListViewController.swift; sourceTree = "<group>"; };
 		37EA1243210070F00018800F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37EA1246210070F00018800F /* Birthday_Reminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Birthday_Reminder.xcdatamodel; sourceTree = "<group>"; };
 		37EA1248210070F20018800F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37EA124B210070F20018800F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37EA124D210070F20018800F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37EA125321008C8E0018800F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		37EA125521008E680018800F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		37EA125721008F1C0018800F /* Theme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Theme.xcassets; sourceTree = "<group>"; };
+		37EA1259210094AF0018800F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		723A330B4D7D9C1CE5F93239 /* Pods_Birthday_Reminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Birthday_Reminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE99E45CAA2F62E69BDFA58 /* Pods-Birthday-Reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birthday-Reminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder.release.xcconfig"; sourceTree = "<group>"; };
 		FA0756671453818AB8A300DE /* Pods-Birthday-Reminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birthday-Reminder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,12 +72,16 @@
 			isa = PBXGroup;
 			children = (
 				37EA123E210070F00018800F /* AppDelegate.swift */,
-				37EA1240210070F00018800F /* ViewController.swift */,
+				37EA1259210094AF0018800F /* SettingViewController.swift */,
+				37EA1240210070F00018800F /* BirthdayListViewController.swift */,
 				37EA1242210070F00018800F /* Main.storyboard */,
+				37EA125321008C8E0018800F /* GoogleService-Info.plist */,
 				37EA1248210070F20018800F /* Assets.xcassets */,
 				37EA124A210070F20018800F /* LaunchScreen.storyboard */,
 				37EA124D210070F20018800F /* Info.plist */,
 				37EA1245210070F00018800F /* Birthday_Reminder.xcdatamodeld */,
+				37EA125521008E680018800F /* Theme.swift */,
+				37EA125721008F1C0018800F /* Theme.xcassets */,
 			);
 			path = "Birthday-Reminder";
 			sourceTree = "<group>";
@@ -152,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EA124C210070F20018800F /* LaunchScreen.storyboard in Resources */,
+				37EA125421008C8F0018800F /* GoogleService-Info.plist in Resources */,
+				37EA125821008F1C0018800F /* Theme.xcassets in Resources */,
 				37EA1249210070F20018800F /* Assets.xcassets in Resources */,
 				37EA1244210070F00018800F /* Main.storyboard in Resources */,
 			);
@@ -209,8 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EA125A210094AF0018800F /* SettingViewController.swift in Sources */,
 				37EA1247210070F00018800F /* Birthday_Reminder.xcdatamodeld in Sources */,
-				37EA1241210070F00018800F /* ViewController.swift in Sources */,
+				37EA125621008E680018800F /* Theme.swift in Sources */,
+				37EA1241210070F00018800F /* BirthdayListViewController.swift in Sources */,
 				37EA123F210070F00018800F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +375,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZZE3DZVHL;
 				INFOPLIST_FILE = "Birthday-Reminder/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Patel.Birthday-Reminder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -375,7 +395,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZZE3DZVHL;
 				INFOPLIST_FILE = "Birthday-Reminder/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Jay-Patel.Birthday-Reminder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
